@@ -10,10 +10,10 @@ const BookedShowsPage = () => {
   }, []);
 
   return (
-    <div className="p-5">
-      <h1 className="text-2xl mb-5">Booked Shows</h1>
+    <div className="p-5  ">
+      <h1 className="text-2xl mb-5 text-center">Booked Shows</h1>
       {bookedShows.length > 0 ? (
-        <ul className="space-y-4 flex flex-wrap">
+        <ul className="space-y-4 flex flex-wrap items-center justify-center w-full">
           {bookedShows.map((show, index) => (
             <li key={index} className="border p-4 rounded w-full md:w-1/2 lg:w-1/3 xl:w-1/4 m-2 flex flex-col items-center">
               {show.image && <img className="w-full h-auto mb-4" src={show.image.medium} alt={show.name} />}

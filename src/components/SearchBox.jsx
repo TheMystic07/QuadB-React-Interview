@@ -11,7 +11,7 @@ const SearchBox = ({ query, setQuery }) => {
         type="text"
         value={query}
         onChange={handleInputChange}
-        className="text-xl p-2 border rounded m-x-2 w-full "
+        className="text-xl p-2 border rounded-xl  w-full "
         placeholder="Search For Your Fav Movies..."
       />
     </div>
