@@ -24,8 +24,10 @@ export const MovieList = () => {
   return (
     <>
       {/* <h2 className="title text-xl mb-5">Movie Listy</h2> */}
+      <div className='flex w-full flex-col items-center justify-center w-11/12'>
+
       <SearchBox query={query} setQuery={setQuery} />
-      <ul className="movie-list flex flex-wrap">
+      <ul className="movie-list flex flex-wrap items-center justify-center">
         {movies.map((movie, index) => (
           <li key={index} className="movie-card border rounded m-2">
             <Link to={`/show/${movie.show.id}`}>
@@ -42,6 +44,8 @@ export const MovieList = () => {
           </li>
         ))}
       </ul>
+      </div>
+
     </>
   );
 };
